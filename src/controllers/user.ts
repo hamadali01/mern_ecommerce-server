@@ -6,9 +6,9 @@ import ErrorHandler from "../utils/utility-class.js";
 
 export const newUser = TryCatch(
   async (
-    req: Request<{}, {}, NewUserRequestBody>,
-    res: Response,
-    next: NextFunction
+    req,
+    res,
+    next
   ) => {
     const { name, email, photo, gender, dob, _id } = req.body;
 
